@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+          new Splide( '#image-carousel' ).mount();
+        } );
+      </script>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gallery</h1>
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="photo-gallery">
+        <div class="photo"><img src="images/ryan in the square universe.png" alt="Gray cat sitting like a human, in the square void universe from spongebob"></div>
+        <div class="photo"><img src="images/ryan pic 2.jpg" alt="A gray cat looking over it's shoulder a the camera"></div>
+        <div class="photo"><img src="images/parapapapapapapapa.gif" alt="a gif of parappa the dog winking and giving a thumbs up"></div>
+        <div class="photo"><img src="images/aimkid-modify.gif" alt="A gif of a cartoon cat being squished by a hydraulic press, they are happy about it"></div>
+        <div class="photo"><img src="images/pet tim.gif" alt="A gif of a plush dog being pet"></div>
+        <div class="photo"><img src="images/pie faced lol.gif" alt="A gif of Killua from HXH, pie-ing Gon in the face"></div>
+        <div class="gallery-controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
